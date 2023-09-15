@@ -1,0 +1,3 @@
+runtime: python38
+entrypoint: gunicorn -b :$PORT --max-requests 50 index:app --timeout 90
+
